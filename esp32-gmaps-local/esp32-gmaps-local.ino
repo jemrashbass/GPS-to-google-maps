@@ -1,4 +1,12 @@
-#include <Arduino.h>
+/*
+ESP32 GPS Local Plotter on Google Maps
+by Roland Pelayo
+for TeachMeMicro
+
+Rev 1.0 - November 1, 2021
+
+Full tutorial on https://www.teachmemicro.com/esp32-gps-google-maps
+*/
 
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
@@ -31,12 +39,12 @@ void setup(void) {
   // Initialize gps
   ss.begin(9600, SWSERIAL_8N1, 13, 12, false);
   if(!ss){
-    Serial.println("Invalid SoftwareSerial pin configuration, check config");
+    Serial.println("Invalid SoftwareSerial pin configuration, check config"); 
     while (1) { // Don't continue with invalid configuration
       delay (1000);
     }
   }
-
+ 
   //Use ESP32 as WiFi Station
   WiFi.mode(WIFI_STA);
   //Initiate WiFi Connection
@@ -99,7 +107,7 @@ String floatToString(float val, float invalid, int len, int prec) {
   }
   else{
     for (int i = 0; i < 10; i++) {
-       dtostrf(val, len, prec, buff);
+       dtostrf(val, len, prec, buff);  
        out += buff;
        return out;
     }
@@ -109,7 +117,7 @@ String floatToString(float val, float invalid, int len, int prec) {
 static void smartdelay(unsigned long ms)
 {
   unsigned long start = millis();
-  do
+  do 
   {
     while (ss.available())
       gps.encode(ss.read());

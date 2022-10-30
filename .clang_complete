@@ -1,5 +1,11 @@
 -I/Users/jemrashbass/Dropbox/Jem&#039;s stuff/Development work/PlatformIO/Projects/GPS to google maps/include
 -I/Users/jemrashbass/Dropbox/Jem&#039;s stuff/Development work/PlatformIO/Projects/GPS to google maps/src
+-I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src
+-I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/FS/src
+-I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src
+-I/Users/jemrashbass/Dropbox/Jem&#039;s stuff/Development work/PlatformIO/Projects/GPS to google maps/lib/jem_lib
+-I/Users/jemrashbass/Dropbox/Jem&#039;s stuff/Development work/PlatformIO/Projects/GPS to google maps/.pio/libdeps/az-delivery-devkit-v4/TinyGPS
+-I/Users/jemrashbass/Dropbox/Jem&#039;s stuff/Development work/PlatformIO/Projects/GPS to google maps/.pio/libdeps/az-delivery-devkit-v4/SoftwareSerial
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos
@@ -198,7 +204,6 @@
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/ESPmDNS/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/Ethernet/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/FFat/src
--I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/FS/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/HTTPClient/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdate/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/HTTPUpdateServer/src
@@ -215,8 +220,6 @@
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/Ticker/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/USB/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/Update/src
--I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src
--I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src
 -I/Users/jemrashbass/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src
