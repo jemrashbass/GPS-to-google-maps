@@ -1,6 +1,7 @@
 #include <Arduino.h>
 
-#include <SoftwareSerial.h>
+//#include <SoftwareSerial.h>
+#include <ESPSoftwareSerial.h>
 #include <TinyGPS.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
