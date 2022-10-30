@@ -1,7 +1,6 @@
 #include <Arduino.h>
 
-//#include <SoftwareSerial.h>
-#include <ESPSoftwareSerial.h>
+#include <SoftwareSerial.h>
 #include <TinyGPS.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -9,10 +8,11 @@
 #include "mainpage.h"
 #include "jscript.h"
 #include "style.h"
+#include "Jem_credentials_HDI.h"
 
 //provide your own WiFi SSID and password
-const char* ssid = "<Your WiFi SSID>";
-const char* password = "<Your WiFi Password>";
+//const char* ssid = "<Your WiFi SSID>";
+//const char* password = "<Your WiFi Password>";
 
 WebServer server(80);
 
@@ -41,7 +41,7 @@ void setup(void) {
   //Use ESP32 as WiFi Station
   WiFi.mode(WIFI_STA);
   //Initiate WiFi Connection
-  WiFi.begin(ssid, password);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.println("");
   // Wait for connection
   while (WiFi.status() != WL_CONNECTED) {
@@ -51,7 +51,7 @@ void setup(void) {
   Serial.println("");
   Serial.print("Connected to ");
   //Print your WiFi's SSID (might be insecure)
-  Serial.println(ssid);
+  Serial.println(WIFI_SSID);
   Serial.print("IP address: ");
   //Print your local IP address (needed for browsing the app)
   Serial.println(WiFi.localIP());
